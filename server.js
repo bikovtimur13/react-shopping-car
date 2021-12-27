@@ -12,7 +12,6 @@ app.get("/", (req, res) => res.sendFile(__dirname + "/build/index.html"));
 mongoose.connect(
     process.env.MONGODB_URL || "mongodb://localhost/react-shopping-cart-db", {
     useNewUrlParser: true,
-    useCreateIndex: true,
     useUnifiedTopology: true,
 }
 );
